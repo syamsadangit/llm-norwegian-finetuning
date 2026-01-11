@@ -1,0 +1,16 @@
+Evaluation: perplexity (base vs fine-tuned)
+Dataset: /home/syam/Documents/MLOPs-project/llm-mini-pipeline/data/processed/no_text.parquet
+Validation examples: 500 (indices 10000..10499 after shuffle seed=42)
+Max length: 256
+
+Base model: distilgpt2
+  Mean loss: 6.020888
+  Perplexity: 411.944
+
+Fine-tuned model: /home/syam/Documents/MLOPs-project/llm-mini-pipeline/models/distilgpt2-no_10k_1
+  Mean loss: 4.785056
+  Perplexity: 119.708
+
+Difference (fine-tuned - base)
+  Delta loss: -1.235832
+  Delta perplexity: -292.236

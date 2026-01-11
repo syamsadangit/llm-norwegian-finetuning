@@ -1,0 +1,19 @@
+2026-01-10 13:31:53 | INFO | Log file: /home/syam/Documents/MLOPs-project/llm-mini-pipeline/reports/train_1.log
+2026-01-10 13:31:53 | INFO | Starting training run
+2026-01-10 13:31:53 | INFO | Run id: 1
+2026-01-10 13:31:53 | INFO | Model: distilgpt2
+2026-01-10 13:31:53 | INFO | Data path: /home/syam/Documents/MLOPs-project/llm-mini-pipeline/data/processed/no_text.parquet
+2026-01-10 13:31:53 | INFO | Output dir: /home/syam/Documents/MLOPs-project/llm-mini-pipeline/models/distilgpt2-no
+2026-01-10 13:31:53 | INFO | Plots dir: /home/syam/Documents/MLOPs-project/llm-mini-pipeline/reports/train_1
+2026-01-10 13:31:55 | INFO | Training samples: 5000
+2026-01-10 13:31:57 | INFO | No checkpoint found. Starting a fresh training run.
+2026-01-10 14:15:52 | INFO | step=50 | loss=5.173500 | learning_rate=0.000042 | grad_norm=4.115469 | epoch=0.160000
+2026-01-10 14:52:59 | INFO | step=100 | loss=4.678400 | learning_rate=0.000034 | grad_norm=4.250899 | epoch=0.320000
+2026-01-10 15:19:32 | INFO | step=150 | loss=4.530000 | learning_rate=0.000026 | grad_norm=4.332051 | epoch=0.480000
+2026-01-10 15:48:03 | INFO | step=200 | loss=4.433100 | learning_rate=0.000018 | grad_norm=4.361445 | epoch=0.640000
+2026-01-10 16:15:35 | INFO | step=250 | loss=4.363800 | learning_rate=0.000010 | grad_norm=4.238945 | epoch=0.800000
+2026-01-10 16:43:33 | INFO | step=300 | loss=4.320600 | learning_rate=0.000002 | grad_norm=4.511735 | epoch=0.960000
+2026-01-10 16:50:59 | INFO | step=313 | epoch=1.000000 | train_runtime=11941.493800 | train_samples_per_second=0.419000 | train_steps_per_second=0.026000 | total_flos=326620938240000.000000 | train_loss=4.571426
+2026-01-10 16:50:59 | INFO | Saved fine-tuned model to: /home/syam/Documents/MLOPs-project/llm-mini-pipeline/models/distilgpt2-no
+2026-01-10 16:51:01 | INFO | Saved plots to: /home/syam/Documents/MLOPs-project/llm-mini-pipeline/reports/train_1
+2026-01-10 16:51:01 | INFO | Training run completed

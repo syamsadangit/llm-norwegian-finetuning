@@ -1,0 +1,27 @@
+# Shared settings (key = value). Lines starting with # are comments.
+
+SEED = 42
+MAX_LEN = 256
+
+# Data
+DATA_PATH = data/processed/no_text.parquet
+
+# Training
+BASE_MODEL = distilgpt2
+TRAIN_SUBSET_SIZE = 10000
+NUM_EPOCHS = 1
+BATCH_SIZE = 4
+GRAD_ACCUM = 4
+LEARNING_RATE = 5e-5
+LOGGING_STEPS = 50
+SAVE_STEPS = 500
+SAVE_TOTAL_LIMIT = 2
+
+# Evaluation
+VAL_SIZE = 500
+
+# Paths
+MODELS_PREFIX = distilgpt2-no_10k
+REPORTS_DIR = reports
+MODELS_DIR = models
+
