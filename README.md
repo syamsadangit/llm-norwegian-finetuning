@@ -24,11 +24,20 @@ source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
-
+Get and prepare Norwegian Wikipedia data from Hugging Face
 ```bash
 python data_prep/prepare_dataset.py
+```
+Fine-tune the distilGPT2 model using custom data points defined in `INPUT`
+```bash
 python training/train_lm.py
+```
+Evaluate the model using the validation dataset by finding perplexity.
+```bash
 python evaluation/eval_perplexity.py
+```
+Qualitative comparison of base mode and fine-tuned model using custom prompts.
+```bash
 python evaluation/prompt_compare.py
 ```
 ## Analysis
