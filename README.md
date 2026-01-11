@@ -28,6 +28,30 @@ Get and prepare Norwegian Wikipedia data from Hugging Face
 ```bash
 python data_prep/prepare_dataset.py
 ```
+## Configuration (INPUT file)
+
+All training and evaluation settings are defined in a single `INPUT` file using simple `key = value` pairs.  
+Lines starting with `#` are comments.
+
+```text
+SEED = 42
+MAX_LEN = 256
+DATA_PATH = data/processed/no_text.parquet
+BASE_MODEL = distilgpt2
+TRAIN_SUBSET_SIZE = 10000
+NUM_EPOCHS = 1
+BATCH_SIZE = 4
+GRAD_ACCUM = 4
+LEARNING_RATE = 5e-5
+LOGGING_STEPS = 50
+SAVE_STEPS = 500
+SAVE_TOTAL_LIMIT = 2
+VAL_SIZE = 500
+MODELS_PREFIX = distilgpt2-no_10k
+REPORTS_DIR = reports
+MODELS_DIR = models
+```
+
 Fine-tune the distilGPT2 model using custom data points defined in `INPUT`
 ```bash
 python training/train_lm.py
