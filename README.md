@@ -30,7 +30,7 @@ python data_prep/prepare_dataset.py
 python training/train_lm.py
 python evaluation/eval_perplexity.py
 python evaluation/prompt_compare.py
-
+```
 ## Analysis
 
 All analysis outputs are stored in the `reports/` directory.
