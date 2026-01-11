@@ -33,23 +33,22 @@ python data_prep/prepare_dataset.py
 All training and evaluation settings are defined in a single `INPUT` file using simple `key = value` pairs.  
 Lines starting with `#` are comments.
 
-```text
-SEED = 42
-MAX_LEN = 256
-DATA_PATH = data/processed/no_text.parquet
-BASE_MODEL = distilgpt2
-TRAIN_SUBSET_SIZE = 10000
-NUM_EPOCHS = 1
-BATCH_SIZE = 4
-GRAD_ACCUM = 4
-LEARNING_RATE = 5e-5
-LOGGING_STEPS = 50
-SAVE_STEPS = 500
-SAVE_TOTAL_LIMIT = 2
-VAL_SIZE = 500
-MODELS_PREFIX = distilgpt2-no_10k
-REPORTS_DIR = reports
-MODELS_DIR = models
+- `SEED` – random seed value used for dataset shuffling  
+- `MAX_LEN` – maximum token length for model inputs  
+- `DATA_PATH` – path to the processed text dataset  
+- `BASE_MODEL` – name of the pre-trained language model used for fine-tuning  
+- `TRAIN_SUBSET_SIZE` – number of samples used for training  
+- `NUM_EPOCHS` – number of training epochs  
+- `BATCH_SIZE` – training batch size per device  
+- `GRAD_ACCUM` – number of gradient accumulation steps  
+- `LEARNING_RATE` – learning rate for fine-tuning  
+- `LOGGING_STEPS` – number of steps between logging updates  
+- `SAVE_STEPS` – number of steps between model checkpoint saves  
+- `SAVE_TOTAL_LIMIT` – maximum number of saved checkpoints  
+- `VAL_SIZE` – number of samples used for validation  
+- `MODELS_PREFIX` – prefix used when naming saved model directories  
+- `REPORTS_DIR` – directory where logs and analysis outputs are stored  
+- `MODELS_DIR` – directory where trained models are saved
 ```
 
 Fine-tune the distilGPT2 model using custom data points defined in `INPUT`
