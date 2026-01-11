@@ -49,7 +49,6 @@ Lines starting with `#` are comments.
 - `MODELS_PREFIX` – prefix used when naming saved model directories  
 - `REPORTS_DIR` – directory where logs and analysis outputs are stored  
 - `MODELS_DIR` – directory where trained models are saved
-```
 
 Fine-tune the distilGPT2 model using custom data points defined in `INPUT`
 ```bash
